@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- To convert special chars to HTML entities go to https://htmlamp.com/html-special-character-converter -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/nes.icons@latest/css/nes-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    
+    <title>Aaravv's Portfolio</title>
+</head>
+
+
+
+<body>
+    <ul id="menu">
+        <br>
+        <li><a href="/index.html#top">Home</a></li>
+     </ul>
+    <div id="top-bar">
+        <p><a href="/404_BSOD.html">Aaravv</a></p>
+        <nav id="hamburgerBTN">
+            <div id="hamburgerBTN-burger"></div>
+        </nav>
+        <div id="top-bar-links_container">
+            <a href='#top' class="bold">Home</a>
+            <a href='#about'>About</a>
+            <a href='#ih-container'>Skills</a>
+            <a href='/projects/'>Projects</a>
+            <a href='#ih-container'>Games</a>
+        </div>
+    </div>
+    
+    <main>
+        <article id="short-intro">
+            <div id="ih-container"><p id="intro-header"></p></div>
+            <div id="aboutmeHome">
+                <p>I'm 10 years old and I started coding when I was 6. <a href="#">A test link</a>.</p>
+            </div> 
+        </article>
+        <article id="about">
+            <h1>About Me</h1>
+            <div id="aboutmeHome">
+                <p>My name is Aaravv and I am 10 years old. I love coding, and I have been doing it since I was 6. I like to code in Python <i class="fa-brands fa-python fa-sm"></i>, HTML <i class="fa-brands fa-html5 fa-sm"></i>, CSS <i class="fa-brands fa-css3 fa-sm"></i>, and JavaScript <i class="fa-brands fa-js fa-sm"></i>.</p>
+            </div> 
+        </article>
+    </main>
+    <!-- JS links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="assets/js/particles.js-master/particles.js"></script>
+    <script src="assets/js/particles.js-master/demo/js/app.js"></script>
+    <script>
+        var typed = new Typed('#intro-header', {
+            strings: ['Hi! My name\'s Aaravv'],
+            typeSpeed: 20,
+            loop: false,
+            showCursor: true,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+
+</html>

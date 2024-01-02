@@ -1,0 +1,117 @@
+@import "../../node_modules/@picocss/pico/css/pico.min.css";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+       --background: #000;
+       --font-colour: #fff;
+   }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+       --background: #fff;
+       --font-colour: #000;
+   }
+}
+
+body {
+    font-family: 'Segoe UI', 'Noto Sans', Roboto, sans-serif;
+    color: var(--font-colour) !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.particles-js {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    padding: 0 !important;
+    z-index: 1;
+}
+
+section {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.6em;
+}
+
+#home {
+    height: 100% !important;
+}
+
+#home .typed-cursor {
+    font-size: 4em;
+}
+
+#intro {
+    display: inline;
+    font-size: 4em;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white !important;
+    padding: 0px 20px;
+    width: 100% !important;
+}
+
+nav *{
+    color: white;
+}
+
+#logo-container #logo {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+#home {
+    width: 100%;
+}
+
+#home__container {
+    height: 100% !important;
+    width: 100%;
+}
+
+#container section {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#credits ul li {
+    list-style-type: none;
+}
+
+/* Tablet and phone screen sizes */
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 5%;
+        width: 100%;
+    }
+}

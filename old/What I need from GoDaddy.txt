@@ -1,0 +1,5 @@
+ - I need tools to upload files to the domain (GoDaddy File Manager or an FTP Client.)
+ - I need to have admin tools and ftp access
+ - An email like info@aaravv.ca or aaravv@aaravv.ca
+ - An SSL Certificate (HTTPS) for security
+ - WHOIS Privacy
