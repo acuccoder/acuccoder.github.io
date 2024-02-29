@@ -1,4 +1,7 @@
-@import "../../node_modules/@picocss/pico/css/pico.min.css";
+/* @import "../../node_modules/@picocss/pico/css/pico.min.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@400;800&display=swap');
+@import "../../node_modules/@sakun/system.css/style.css";
+
 * {
     padding: 0;
     margin: 0;
@@ -20,11 +23,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', 'Noto Sans', Roboto, sans-serif;
+    font-family: 'Inter' 'Segoe UI', 'Noto Sans', Roboto, sans-serif;
     color: var(--font-colour) !important;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    min-height: 100vh;
+}
+
+#homeWindow {
+    width: 60%;
 }
 
 .particles-js {
@@ -52,6 +57,8 @@ section {
 h1 {
     font-size: 2em;
     margin: 0;
+    font-family: Rubik;
+    font-weight: 800;
 }
 
 h2 {
@@ -83,6 +90,15 @@ nav *{
     color: white;
 }
 
+/* Ensuring that the navlinks are shown when phone is in portrait (hamburger), then tilted to landscape (navlinks) */
+#nav-links {
+    display: flex;
+}
+
+nav #hamburger-btn{
+    display: none;
+}
+
 #logo-container #logo {
     font-weight: 300;
     font-size: 1.5em;
@@ -93,7 +109,7 @@ nav *{
 }
 
 #home__container {
-    height: 100svh;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -112,9 +128,44 @@ nav *{
 
 /* Tablet and phone screen sizes */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     main {
         padding: 5%;
         width: 100%;
     }
-}
+    #nav-links {
+        display: none;
+    }
+    #hamburger-btn {
+        position: relative;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: min-content;
+        height: auto;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border: 3px solid white;
+    }
+    
+    #hamburger-btn__burger{
+        width: 50px;
+    #hamburger-btn__burger::before,
+    #hamburger-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background-color: white;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #hamburger-btn__burger::before {
+        transform: translate(-25px, -16px);
+    }
+
+    #hamburger-btn__burger::after {
+        transform: translate(-25px, 16px);
+    }
+}}

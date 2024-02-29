@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaravv's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animatedBackground.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- <nav>
+        <ul id="logo-container">
+            <li id="logo">Aaravv</span>
+        </ul>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <div id="hamburger-btn">
+            <div id="hamburger-btn__burger"></div>
+        </div>
+    </nav> -->
+    
+    <ul role="menu-bar">
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Aaravv
+          <ul role="menu">
+            <li role="menu-item"><a href="#menu">Action</a></li>
+            <li role="menu-item"><a href="#menu">Another Action</a></li>
+            <li role="menu-item" class="divider"><a href="#menu">Something else here</a></li>
+            <li role="menu-item"><a href="https://twitter.com/sakofchit">After Divider</a></li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Edit
+          <ul role="menu">
+            <li role="menu-item"><a href="#menu">Action</a></li>
+            <li role="menu-item"><a href="#menu">Another Action</a></li>
+            <li role="menu-item" class="divider"><a href="#menu">Something else here</a></li>
+            <li role="menu-item"><a href="https://sakun.co">sakun's projects</a></li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          View
+          <ul role="menu">
+            <li role="menu-item"><a href="#menu">Toggle Light/Dark</a></li>
+            <li role="menu-item"><a href="#menu">Another Action</a></li>
+            <li role="menu-item"><a href="#menu">Something else here</a></li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Special
+          <ul role="menu">
+            <li role="menu-item"><a href="#menu">You</a></li>
+            <li role="menu-item"><a href="#menu">Get the</a></li>
+            <li role="menu-item"><a href="#menu">Idea</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="window" id="homeWindow">
+        <div class="title-bar">
+          <button aria-label="Close" class="close"></button>
+          <h1 class="title">Home</h1>
+          <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="separator"></div>
+        <div class="window-pane">
+            <section id="home__container">
+                <div id="home">
+                    <div id="#intro__container">
+                        <span id="intro__typed-strings"></span>
+                        <h1 id="intro"></h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+      </div>
+
+    <!-- <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li id="background__bottom-fix"></li>
+    </ul> -->
+        <!-- <section id="aboutme__container">
+            <article>
+                <h1>About Me</h1>
+                <p>My name is Aaravv, and I am 10 years old. I love to code, and it has been my passion since I was 6. 
+                   I like to play video games and mess around with virtual machines.</p>
+            </article>
+        </section>
+        <section id="contact__container">
+            <article>
+                <h1>Contact Me</h1>
+                <span>Fill out the form below and I will get back to you as soon as I can.</span>
+            </article>
+            <form action="https://formspree.io/f/meqbwvdr" method="POST">
+                <article>
+                    <label for="name">
+                        <input type="text" name="name" id="contactName" placeholder="Name">
+                    </label>
+                    <label for="email">
+                        <input type="email" name="email" id="contactEmail" placeholder="Email" required>
+                        <small>This is just for responding to you. I never share emails with anyone else.</small>
+                    </label>
+                    <label for="message">
+                        <textarea name="message" id="contactMessage" cols="30" rows="10" placeholder="Message" required></textarea>
+                    </label>
+                    <button title="Submit" type="submit">Send <i class="fa-regular fa-paper-plane"></i></button>
+                </article>
+            </form>
+        </section>
+        <details id="credits">
+            <summary>Credits</summary>
+            <p>I never could have made this website without the help of these people/companies.</p>
+            <h2>Code</h2>
+            <ul>
+                <li>This website heavily relies on <a href='https://www.picocss.com/'>Pico CSS</a> for providing the framework css for this website</li>
+                <li>Thank you, <a href='https://www.mattboldt.com/'>Matt Boldt</a> for <a href='https://mattboldt.com/demos/typed-js/'>Typed.js</a>.</li>
+                <li></li>
+            </ul>
+        </details> -->
+    <script src="/assets/js/script.js" type="module"></script> <!-- ! Cannot use import statement outside a module ! --> <!-- <-- That haunts my dreams. -->
+    <script src="/node_modules/typed.js/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#intro', {
+            strings: ['Hi! My name is Aaravv', 'I am 10 years old'],
+            typeSpeed: 30,
+            loop: true,
+            loopCount: Infinity,
+            cursorChar: '|'
+        });
+    </script>
+</body>
+
+</html>
