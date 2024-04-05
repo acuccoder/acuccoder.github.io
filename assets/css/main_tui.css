@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'DOS_CGA';
+    src: url('../fonts/IBM_CGA.woff') format('woff'),
+         url('../fonts/Perfect DOS VGA 437.ttf')  format('truetype') /* Failsafe for older browsers and phones */
+}
+
+@font-face {
+    font-family: 'DOS_VGA';
+    src: url('../fonts/IBM_VGA.woff') format('woff'),
+         url('../fonts/Perfect DOS VGA 437.ttf')  format('truetype')
+}
+
+html {
+    font-family: 'DOS_VGA', 'DOS_VGA', 'IBM Plex Mono', 'Courier New', monospace !important;
+    font-size: 19px !important;
+    color: white;
+}
+
+.tui-window {
+    display: flex;
+    width: fit-content;
+    text-align: center;
+}
+
+.h1{
+    margin: 0;
+}
+
+#name-window {
+    line-height: 1;
+    width: 100%;
+}
+
+.black {
+    color: black;
+}
+
+.asciiContainer {
+    font-family: monospace;
+}
+
+#main-window {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
