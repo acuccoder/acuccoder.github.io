@@ -23,8 +23,8 @@
     font-family: var(--sans-serif)
 } */
 
-#particles-js {
-    background: #202020;
+#tsparticles {
+    background: #202020 !important;
     height: 100vh !important;
     height: 100% !important;
     text-align: center;

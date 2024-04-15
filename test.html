@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tsParticles Test</title>
+</head>
+<body>
+	<div id="tsparticles"></div>
+</body>
+<script src="/assets/js/script.js" type="module"></script>
+<script src="/assets/js/tsparticles.engine.min.js"></script>
+<script>
+	tsParticles.load({
+		id: "tsparticles",
+		options: {
+		  preset: "links"
+		},
+		// url: "tsparticles.json",
+	})
+	.then(container => {
+		console.log("callback - tsparticles config loaded");
+	})
+	.catch(error => {
+		console.error(error);
+	});
+</script>
+</html>
