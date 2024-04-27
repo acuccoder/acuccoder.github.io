@@ -1,0 +1,9 @@
+body {
+    background-image: url(../images/bliss4k.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.asciiContainer {
+    font-family: monospace !important;
+}

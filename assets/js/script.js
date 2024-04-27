@@ -1,16 +1,17 @@
-tsParticles.load({
+tsParticles
+  .load({
     id: "tsparticles",
     options: {
-      preset: "links"
+      preset: "links",
     },
     // url: "tsparticles.json",
-})
-.then(container => {
+  })
+  .then((container) => {
     console.log("callback - tsparticles config loaded");
-})
-.catch(error => {
+  })
+  .catch((error) => {
     console.error(error);
-});
+  });
 
 // particlesJS("particles-js", {
 //   particles: {

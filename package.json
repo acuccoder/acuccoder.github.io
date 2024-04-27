@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/acuccoder/acuccoder.github.io#readme",
   "dependencies": {
-    "@picocss/pico": "^1.5.13",
     "@tsparticles/engine": "^3.3.0",
-    "tuicss": "^2.1.2",
-    "typed.js": "^2.1.0"
+    "jquery": "^3.7.1",
+    "typed.js": "^2.1.0",
+    "xp.css": "^0.2.6"
   }
 }
