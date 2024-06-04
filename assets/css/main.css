@@ -29,3 +29,7 @@
 nav {
     padding: 0px 20px;
 }
+
+#mono * {
+    font-family: monospace !important;
+}

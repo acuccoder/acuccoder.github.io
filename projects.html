@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aaravv's Portfolio</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+	<nav>
+		<ul>
+		  <li><strong>Aaravv</strong></li>
+		</ul>
+		<ul>
+		  <li><a href="/">About</a></li>
+		  <li><a href="#">Projects</a></li>
+		  <li><a href="asciiart.html">ASCII ART</a></li>
+		  <li>	<details class="dropdown">
+			<summary role="button" class="secondary">Theme</summary>
+			<ul>
+				<li><a href="#" data-theme-switcher="auto">Auto</a></li>
+				<li><a href="#" data-theme-switcher="light">Light</a></li>
+				<li><a href="#" data-theme-switcher="dark">Dark</a></li>
+			</ul>
+			</details></li>
+		</ul>
+	  </nav>
+	<main class="container">
+		<noscript>Projects (turn on JavaScript to view typing animation)</noscript>
+		<h1 id="title"></h1>
+		<p>These are the projects that I have made in <a href="https://www.python.org/">Python</a>, <a href="https://www.scratch.mit.edu/">Scratch</a>*, <a href="https://html.spec.whatwg.org/multipage/">HTML</a>, and Bash</p>
+		<article id="pythonProjects">
+			<h2>About Me</h2>
+			<p>My name is Aaravv and I am 10 years old. I love to code 👨‍💻 and I have been doing it since I was 6 years old.</p>
+		</article>
+	</main>
+	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="node_modules/typed.js/dist/typed.umd.js"></script>
+	<script>
+		const projectsTyped = new Typed('#title', {
+		  strings: ['Projects'],
+		  typeSpeed: 50,
+		  showCursor: false
+		});
+	</script>
+</body>
+</html>

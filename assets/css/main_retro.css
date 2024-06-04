@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 body {
     background-image: url(../images/bliss4k.jpg);
     background-attachment: fixed;
     background-size: cover;
+}
+
+.title-bar {
+    font-family: Cabin, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 .asciiContainer {
