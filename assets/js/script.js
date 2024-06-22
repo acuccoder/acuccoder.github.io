@@ -1,17 +1,18 @@
-tsParticles
-  .load({
-    id: "tsparticles",
-    options: {
-      preset: "links",
-    },
-    // url: "tsparticles.json",
-  })
-  .then((container) => {
-    console.log("callback - tsparticles config loaded");
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+// import { tsParticles } from "tsParticles";
+// tsParticles
+//     .load({
+//         id: "tsparticles",
+//         options: {
+//             preset: "links",
+//         },
+//         url: "tsparticles.json",
+//     })
+//     .then((container) => {
+//         console.log("callback - tsparticles config loaded");
+//     })
+//     .catch((error) => {
+//         console.error(error);
+//     });
 
 // particlesJS("particles-js", {
 //   particles: {
