@@ -21,7 +21,7 @@
   "homepage": "https://github.com/acuccoder/acuccoder.github.io#readme",
   "dependencies": {
     "@tsparticles/engine": "^3.3.0",
-    "tsparticles": "^3.4.0",
+    "tsparticles": "^3.5.0",
     "typed.js": "^2.1.0",
     "xp.css": "^0.2.6"
   }
