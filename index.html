@@ -1,18 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark" />
-    <title>Aaravv's Portfolio</title>
+    <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="assets/libraries/pico.min.css">
+    <title>Aaravv's Portfolio</title>
 </head>
 
 <body>
-    <header></header>
-    <main class="container-fluid"></main>
-    <footer></footer>
+    <main class=" container ">
+        <nav>
+            <ul>
+                <li><strong onclick="changeToMono() ">Aaravv</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary role="button" class="outline">
+                            Projects
+                        </summary>
+                        <ul dir="rtl">
+                            <li><a href="#">Scratch</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">HTML/CSS/JS</a></li>
+                            <li><a href="#">Bash</a></li>
+                            <li><a href="#">C</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <!-- <li>
+                    <details class="dropdown">
+                        <summary role="button" class="outline">
+                            Other
+                        </summary>
+                        <ul dir="rtl">
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                        </ul>
+                    </details>
+                </li> -->
+            </ul>
+        </nav>
+        <div id="hero">
+            <h1>Home</h1>
+        </div>
+        <p>Hi! My name is Aaravv. Welcome to my portfolio!</p>
+        <h1 id="about">About Me</h1>
+        <p>My name is Aaravv and I am 11 years old. I love soccer, coding, <span title="I use Arch btw">Linux</span> and math. I started coding when I was 6 years old. I use
+            <a href="https://www.archlinux.org/" target="_blank">Arch Linux</a> as my main OS and Windows 11 in a VM.</p>
+        <h2 id="skills">Skills</h2>
+        <p></p>
+        <h1 id="projects">Projects</h1>
+        <h2 id="scratch">Scratch</h2>
+        <p></p>
+        <h2 id="python">Python</h2>
+        <p></p>
+        <h2 id="webdev">HTML/CSS/JS</h2>
+        <p></p>
+        <h2 id="bash">Bash</h2>
+        <p></p>
+        <h2 id="c-coding">C</h2>
+        <p></p>
+    </main>
 </body>
 
 </html>
