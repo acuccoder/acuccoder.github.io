@@ -6,6 +6,7 @@
         <title>Aaravv's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="./fullpage.min.css" />
         <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="./pixel-canvas.js"></script>
         <!-- Created using fullPage.js (https://alvarotrigo.com/fullPage/) -->
     </head>
     <body>
@@ -20,6 +21,9 @@
                     <li data-anchor="aboutme">
                         <a href="#aboutme">About Me</a>
                     </li>
+                    <li data-anchor="skills">
+                        <a href="#skills">Skills</a>
+                    </li>
                     <li data-anchor="myprojects">
                         <a href="#myprojects">My Projects</a>
                     </li>
@@ -28,6 +32,15 @@
                     </li>
                     <li data-anchor="contact">
                         <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a
+                            id="typingSpeedToggle"
+                            href="#"
+                            onclick="typeSpeedToggle()"
+                            title="This will not affect currently running typing animations."
+                            >Speed up typing</a
+                        >
                     </li>
                     <li id="hamburger">
                         <span></span><span></span><span></span>
@@ -44,6 +57,13 @@
             <div class="section">
                 <h1 id="aboutme-typed"></h1>
                 <p id="aboutme-typed"></p>
+            </div>
+            <div class="section">
+                <h1 id="skills-typed"></h1>
+                <p id="skills-typed"></p>
+                <div>
+                    <img src="html5-svgrepo-com.svg" alt="HTML5" />
+                </div>
             </div>
             <div class="section">
                 <h1 id="projects-typed"></h1>
@@ -86,6 +106,7 @@
                 anchors: [
                     "top",
                     "aboutme",
+                    "skills",
                     "myprojects",
                     "competitions",
                     "contact",

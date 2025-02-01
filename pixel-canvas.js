@@ -22,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-*/
+END Added MIT License */
 
 class Pixel {
   constructor(canvas, context, x, y, color, speed, delay) {
@@ -54,7 +54,12 @@ class Pixel {
     const centerOffset = this.maxSizeInteger * 0.5 - this.size * 0.5;
 
     this.ctx.fillStyle = this.color;
-    this.ctx.fillRect(this.x + centerOffset, this.y + centerOffset, this.size, this.size);
+    this.ctx.fillRect(
+      this.x + centerOffset,
+      this.y + centerOffset,
+      this.size,
+      this.size,
+    );
   }
 
   appear() {
@@ -175,7 +180,9 @@ class PixelCanvas extends HTMLElement {
     this.ctx = this.canvas.getContext("2d");
     this.timeInterval = 1000 / 60;
     this.timePrevious = performance.now();
-    this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    this.reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
 
     this.init();
     this.resizeObserver = new ResizeObserver(() => this.init());
@@ -254,10 +261,15 @@ class PixelCanvas extends HTMLElement {
   createPixels() {
     for (let x = 0; x < this.canvas.width; x += this.gap) {
       for (let y = 0; y < this.canvas.height; y += this.gap) {
-        const color = this.colors[Math.floor(Math.random() * this.colors.length)];
-        const delay = this.reducedMotion ? 0 : this.getDistanceToCanvasCenter(x, y);
+        const color =
+          this.colors[Math.floor(Math.random() * this.colors.length)];
+        const delay = this.reducedMotion
+          ? 0
+          : this.getDistanceToCanvasCenter(x, y);
 
-        this.pixels.push(new Pixel(this.canvas, this.ctx, x, y, color, this.speed, delay));
+        this.pixels.push(
+          new Pixel(this.canvas, this.ctx, x, y, color, this.speed, delay),
+        );
       }
     }
   }
