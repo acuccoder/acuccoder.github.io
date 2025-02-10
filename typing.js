@@ -5,7 +5,6 @@ const TypingSpeedToggle = document.getElementById("typingSpeedToggle");
 
 function typeSpeedToggle() {
   if (TypingSpeedToggle.innerHTML == "Speed up typing") {
-    // for some reason Zed keeps putting (( )) instead of ( ) when I save
     TypingSpeedToggle.innerHTML = "Slow down typing";
     _typeSpeed = 5;
   } else {
@@ -79,16 +78,14 @@ function callTyping(section) {
 function callSectionTwo(number) {
   if (number == 1) {
     var hero_typed_p = new Typed("p#hero-typed", {
-      strings: [
-        "I love Coding, Math, and anything related to computers (except M$ Windows)",
-      ],
+      strings: ["I love Coding, Math, and anything related to computing"],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
   } else if (number == 2) {
     var aboutme_typed_p = new Typed("p#aboutme-typed", {
       strings: [
-        "My name is Aaravv Chopra. I love coding and Linux-related stuff. I am 11 years old, so pretty young for someone who is into coding. I am learning C and some TypeScript, and I currently know HTML, CSS, JavaScript, basically every existing block coding language, and Python. BTW I use Arch (if you know you know).",
+        "My name is Aaravv Chopra. I love coding and Linux-related stuff. I am 11 years old, so pretty young for someone who is into coding. I am learning C, and I currently know HTML, CSS, JavaScript, basically every existing block coding language, and Python. BTW, I use Arch.",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
