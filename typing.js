@@ -78,7 +78,7 @@ function callTyping(section) {
 function callSectionTwo(number) {
   if (number == 1) {
     var hero_typed_p = new Typed("p#hero-typed", {
-      strings: ["I love Coding, Math, and anything related to computing"],
+      strings: ["I like coding, math, and anything related to computers."],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
