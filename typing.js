@@ -1,5 +1,5 @@
 var alreadyTyped = [false, false, false, false, false, false];
-var _typeSpeed = 50;
+var _typeSpeed = 30;
 
 const TypingSpeedToggle = document.getElementById("typingSpeedToggle");
 
@@ -13,20 +13,21 @@ function typeSpeedToggle() {
   }
 }
 
-var hero_typed_h1 = new Typed("h1#hero-typed", {
-  strings: ["Hi!^750 My name is Aaravv."],
-  typeSpeed: _typeSpeed,
-  showCursor: false,
-  onStringTyped: (arrayPos, self) => {
-    callSectionTwo(1);
-  },
-});
-
 function callTyping(section) {
   if (alreadyTyped[section]) {
     return;
   }
   if (section == 1) {
+    var hero_typed_h1 = new Typed("h1#hero-typed", {
+      strings: ["Hi!^750 My name is Aaravv."],
+      typeSpeed: _typeSpeed,
+      showCursor: false,
+      onStringTyped: (arrayPos, self) => {
+        callSectionTwo(1);
+      },
+    });
+  }
+  if (section == 2) {
     var aboutme_typed_h1 = new Typed("h1#aboutme-typed", {
       strings: ["A Little Bit About Me"],
       typeSpeed: _typeSpeed,
@@ -35,7 +36,7 @@ function callTyping(section) {
         callSectionTwo(2);
       },
     });
-  } else if (section == 2) {
+  } else if (section == 3) {
     var projects_typed_h1 = new Typed("h1#skills-typed", {
       strings: ["My Skills"],
       typeSpeed: _typeSpeed,
@@ -44,7 +45,7 @@ function callTyping(section) {
         callSectionTwo(3);
       },
     });
-  } else if (section == 3) {
+  } else if (section == 4) {
     var projects_typed_h1 = new Typed("h1#projects-typed", {
       strings: ["My Notable Projects"],
       typeSpeed: _typeSpeed,
@@ -53,7 +54,7 @@ function callTyping(section) {
         callSectionTwo(4);
       },
     });
-  } else if (section == 4) {
+  } else if (section == 5) {
     var competitions_typed_h1 = new Typed("h1#achievements-typed", {
       strings: ["My Achievements and Competitions"],
       typeSpeed: _typeSpeed,
@@ -62,7 +63,7 @@ function callTyping(section) {
         callSectionTwo(5);
       },
     });
-  } else if (section == 5) {
+  } else if (section == 6) {
     var contact_typed_h1 = new Typed("h1#contactme-typed", {
       strings: ["Contact Me"],
       typeSpeed: _typeSpeed,
@@ -78,7 +79,9 @@ function callTyping(section) {
 function callSectionTwo(number) {
   if (number == 1) {
     var hero_typed_p = new Typed("p#hero-typed", {
-      strings: ["I like coding, math, and anything related to computers."],
+      strings: [
+        "My hobbies are coding, math, and anything related to computers.",
+      ],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });

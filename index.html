@@ -6,22 +6,136 @@
         <title>Aaravv's Portfolio</title>
         <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
         <link rel="stylesheet" href="main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
-        <div class="window">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">Home</h1>
-                <button aria-label="Resize" class="resize"></button>
+        <ul role="menu-bar">
+            <li role="menu-item" tabindex="0" aria-haspopup="true">
+                File
+                <ul role="menu">
+                    <li role="menu-item"><a href="#">Open</a></li>
+                    <li role="menu-item"><a href="#">Save</a></li>
+                </ul>
+            </li>
+            <li role="menu-item" tabindex="0" aria-haspopup="true">
+                Places
+                <ul role="menu">
+                    <li role="menu-item"><a onclick="openWindow(1)">Home</a></li>
+                    <li role="menu-item"><a onclick="openWindow(2)">About Me</a></li>
+                    <li role="menu-item"><a onclick="openWindow(3)">My Skills</a></li>
+                    <li role="menu-item"><a onclick="openWindow('bleem')">Competitions</a></li>
+                    <li role="menu-item"><a onclick="openWindow(4)">Contact Me</a></li>
+                </ul>
+            </li>
+            <li role="menu-item" tabindex="0" aria-haspopup="true">
+                Edit
+                <ul role="menu">
+                    <li role="menu-item"><a href="#">Copy</a></li>
+                    <li role="menu-item"><a href="#">Paste</a></li>
+                </ul>
+            </li>
+            <li role="menu-item" tabindex="0" aria-haspopup="true">
+                View
+                <ul role="menu">
+                    <li role="menu-item"><a href="#">Fullscreen</a></li>
+                    <li role="menu-item"><a href="#">Hide Page</a></li>
+                </ul>
+            </li>
+            <li role="menu-item" tabindex="0" aria-haspopup="true">
+                Special
+                <ul role="menu">
+                    <li role="menu-item">
+                        <a href="#">Are you <em>special?</em></a>
+                    </li>
+                    <li role="menu-item">
+                        <a href="#"
+                            ><b><em>Pick one.</em></b>
+                    </li>
+                    <li role="menu-item" class="divider"></li>
+                    <li role="menu-item">
+                        <a
+                            href="https://www.naturl.link/A5Hoy9"
+                            title="credit to shattereddisk"
+                            target="_blank"
+                        >
+                            not_a_virus.sh
+                        </a>
+                    </li>
+                    <li role="menu-item">
+                        <a
+                            href="https://www.naturl.link/A5Hoy9"
+                            title="credit to shattereddisk"
+                            target="_blank"
+                        >
+                            not_a_virus.dmg
+                        </a>
+                    </li>
+                    <li role="menu-item">
+                        <a
+                            href="https://www.naturl.link/A5Hoy9"
+                            title="credit to shattereddisk"
+                            target="_blank"
+                        >
+                            not_a_virus.exe
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li role="menu-item" tabindex="0" aria-haspopup="false">
+                <a
+                    target="_blank"
+                    href="https://github.com/sakofchit/system.css"
+                    >System.css on GitHub</a
+                >
+            </li>
+        </ul>
+
+        <div id="windowContainer">
+            <div class="window">
+                <div class="title-bar">
+                    <button aria-label="Close" class="close" onclick="this.parentElement.parentElement.style.display = 'none';"></button>
+                    <h1 class="title">Home</h1>
+                    <button aria-label="Resize" class="resize"></button>
+                </div>
+                <div class="separator"></div>
+                <div class="window-pane">
+                    <h1 id="hero-typed"></h1>
+                    <p id="hero-typed"></p>
+                    <!-- <button class="btn">Hello</button> -->
+                    <small>Click the "Places" menu to navigate.</small>
+                </div>
             </div>
-            <div class="separator"></div>
-            <div class="window-pane">
-                <h1 id="hero-typed"></h1>
-                <p id="hero-typed"></p>
-                <button class="btn">Hello</button>
+        </div>
+        <button class="btn" onclick="callTyping(1)">Testest</button>
+
+        <div class="bmenu">
+            <div class="modal-dialog outer-border" style="width: fit-content">
+                <div class="inner-border center">
+                    <div class="modal-contents">
+                        <!-- <h1 class="modal-text">Modal Dialog</h1> -->
+                        <div>
+                            <div class="field-row">
+                                <a
+                                    href="https://github.com/acuccoder/acuccoder.github.io"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a onclick="openWindow('4')"
+                                    ><i class="fa-solid fa-envelope"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="typed.umd.js"></script>
         <script src="typing.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
