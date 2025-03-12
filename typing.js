@@ -109,7 +109,20 @@ function callSectionTwo(number) {
     });
   } else if (number == 5) {
     var achivements_typed_p = new Typed("p#achievements-typed", {
-      strings: [""],
+      strings: [
+        `I have participated in the following notable competitions:
+        <ul>
+          <li>The 2023 Canada Jay Mathematics Competition</li>
+          <li>The 2024 Canada Jay Mathematics Competition</li>
+          <li>The 2024 Canada Lynx Mathematics Competition</li>
+          <li>The 10th Annual MegaMath Competition (2023) - Appreciation</li>
+          <li>The Megamind 2024 Spelling Bee Competition - Winner (1st place)</li>
+          <li>The Spelling Bee of Canada - Regional Competition - Primary 2nd</li>
+          <li>FIRST Tech Challenge Missisauga Qualifier - 1st Place Motivate Award</li>
+          <li>Ontario VEX IQ Robotics Championship MS Provincials</li>
+        </ul>
+        `,
+      ],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
