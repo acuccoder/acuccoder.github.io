@@ -1,0 +1,68 @@
+/* Skills Items */
+.skills-container {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  padding: 10px;
+}
+
+.skills-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.skills-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #81a1c1ad;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+
+.skills-container:hover .skills-overlay-html {
+  top: 0;
+  height: 100%;
+}
+
+.skills-container:hover .skills-overlay-css {
+  top: 15%;
+  height: 85%;
+}
+
+.skills-container:hover .skills-overlay-js {
+  top: 50%;
+  height: 50%;
+}
+
+.skills-container:hover .skills-overlay-html {
+  top: 0%;
+  height: 100%;
+}
+
+.skills-container:hover .skills-overlay-html {
+  top: 0%;
+  height: 100%;
+}
+
+.skills-container:hover .skills-overlay-html {
+  top: 0%;
+  height: 100%;
+}
+
+.skills-overlay-text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
