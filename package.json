@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@catppuccin/palette": "^1.7.1",
+    "typed.js": "^2.1.0"
+  }
+}

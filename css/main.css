@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "nord.css";
 @import "responsive.css";
+@import "../node_modules/@catppuccin/palette/css/catppuccin.css"; /* yes completely future-proof */
+@import "skills.css";
+
 
 :root {
   --sans-serif: Montserrat, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   --heading: Onest, var(--sans-serif);
   --monospace: "Space Mono", monospace;
+  --text-darkmode: var(--ctp-macchiato-text);
+  --bg-darkmode: var(--ctp-macchiato-base)
 }
 
 body {
   font-family: var(--monospace);
-  color: white;
+  color: var(--text-darkmode);
   text-align: center;
 }
 
@@ -34,7 +39,7 @@ p {
 }
 
 a {
-  color: var(--nord9);
+  color: var(--ctp-macchiato-blue);
   text-decoration: none;
 }
 a:hover {
@@ -50,7 +55,7 @@ nav {
 nav ul div {
   display: flex;
   list-style-type: none;
-  background-color: var(--nord7);
+  background-color: var(--ctp-macchiato-surface0);
   padding: 10px;
   margin-right: 40px;
   border-radius: 51vh;
@@ -63,9 +68,9 @@ nav ul div {
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa; */
-  box-shadow: 0px 0px 2px rgba(143, 188, 187, 0.5),
-    0px 0px 4px rgba(143, 188, 187, 0.5), 0px 0px 8px rgba(143, 188, 187, 0.5),
-    0px 0px 16px rgba(143, 188, 187, 0.5);
+  box-shadow: 0px 0px 2px rgba(var(--ctp-macchiato-surface0) / 0.5),
+    0px 0px 4px rgba(var(--ctp-macchiato-surface0) / 0.5), 0px 0px 8px rgba(var(--ctp-macchiato-surface0) / 0.5),
+    0px 0px 16px rgba(var(--ctp-macchiato-surface0) / 0.5);
 }
 
 nav ul div:first-child {
@@ -85,7 +90,7 @@ nav ul div:first-child li {
 }
 
 nav ul div li a {
-  color: var(--nord1);
+  color: var(--ctp-macchiato-blue);
 }
 
 #hamburger {
@@ -99,11 +104,9 @@ nav ul div li a {
 /* Section styles */
 
 .section:nth-child(odd) {
-  background-color: var(--nord0);
+  background-color: var(--bg-darkmode);
 }
 
 .section:nth-child(even) {
-  background-color: var(--nord1);
+  background-color: var(--bg-darkmode);
 }
-
-

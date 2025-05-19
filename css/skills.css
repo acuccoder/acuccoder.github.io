@@ -17,7 +17,7 @@
   top: 100%;
   left: 0;
   right: 0;
-  background-color: #81a1c1ad;
+  background-color: rgba(var(--ctp-macchiato-blue-rgb) / 0.5);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -40,14 +40,14 @@
   height: 50%;
 }
 
-.skills-container:hover .skills-overlay-html {
-  top: 0%;
-  height: 100%;
+.skills-container:hover .skills-overlay-python {
+  top: 10%;
+  height: 90%;
 }
 
-.skills-container:hover .skills-overlay-html {
-  top: 0%;
-  height: 100%;
+.skills-container:hover .skills-overlay-c {
+  top: 85%;
+  height: 15%;
 }
 
 .skills-container:hover .skills-overlay-html {
