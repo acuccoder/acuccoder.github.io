@@ -47,7 +47,7 @@ function callTyping(section) {
     });
   } else if (section == 3) {
     var projects_typed_h1 = new Typed("h1#projects-typed", {
-      strings: ["My Notable Projects"],
+      strings: ["My Projects"],
       typeSpeed: _typeSpeed,
       showCursor: false,
       onStringTyped: (arrayPos, self) => {
@@ -100,7 +100,7 @@ function callSectionTwo(number) {
   } else if (number == 4) {
     var projects_typed_p = new Typed("p#projects-typed", {
       strings: [
-        "This page will be updated with new projects once I get around to working on them. For now, I don't have any useful projects except for some Scratch games.  ",
+        "This page will be updated with new projects once I get them to a usable level.  ",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
