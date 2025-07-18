@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-    --sans-serif: Montserrat, sOxygen, Ubuntu, Cantarell, "Open Sans",
+    --sans-serif: Montserrat, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
     --monospace: "Jetbrains Mono", monospace;
 }
