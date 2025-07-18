@@ -76,6 +76,17 @@ function callTyping(section) {
   alreadyTyped[section] = true;
 }
 
+function getAge(dateString) {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+
 function callSectionTwo(number) {
   if (number == 1) {
     var hero_typed_p = new Typed("p#hero-typed", {
@@ -86,7 +97,7 @@ function callSectionTwo(number) {
   } else if (number == 2) {
     var aboutme_typed_p = new Typed("p#aboutme-typed", {
       strings: [
-        "My name is Aaravv Chopra. I love coding and Linux-related stuff. I am 11 years old, so pretty young for someone who is into coding. I am learning C and some TypeScript, and I currently know HTML, CSS, JavaScript, basically every existing block coding language, and Python. <a href='https://wiki.archlinux.org/title/Arch_is_the_best'>Arch is the best</a>.",
+        "My name is Aaravv Chopra. I love coding and Linux-related stuff. I am " + getAge("2013/06/29") + " years old, so pretty young for someone who is into coding. I am learning C and some TypeScript, and I currently know HTML, CSS, JavaScript, basically every existing block coding language, and Python. <a href='https://wiki.archlinux.org/title/Arch_is_the_best'>Arch is the best</a>.",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
