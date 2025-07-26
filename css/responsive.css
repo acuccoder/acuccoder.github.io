@@ -1,27 +1,8 @@
+@import "hamburger.css";
 /* Responsive Media Queries */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
   /* Hiding the inline list elements on the right */
-  nav ul div li {
+  nav ul div:last-child {
     display: none;
   }
-  nav ul div:first-child li {
-    display: block;
-  }
-  #hamburger {
-    display: flex;
-    flex-direction: column;
-  }
-  #hamburger span {
-    width: 35px;
-    height: 5px;
-    background-color: var(--nord1);
-    border-radius: 51vh;
-  }
-  #hamburger span:first-child,
-  #hamburger span:nth-child(2) {
-    margin-bottom: 4px;
-  }
-  /* #hamburger span:last-child {
-        marg: 5px 0px;
-    } */
 }

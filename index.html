@@ -11,12 +11,12 @@
   <body>
     <nav>
       <ul id="navigation">
-        <div>
+        <div class="liquidglass">
           <li data-anchor="top">
             <a href="#top">Aaravv</a>
           </li>
         </div>
-        <div>
+        <div class="liquidglass">
           <li data-anchor="aboutme">
             <a href="#aboutme">About Me</a>
           </li>
@@ -32,19 +32,39 @@
           <li data-anchor="contact">
             <a href="#contact">Contact</a>
           </li>
-          <li>
-            <a
-              id="typingSpeedToggle"
-              href="#"
-              onclick="typeSpeedToggle()"
-              title="This will not affect currently running typing animations."
-              >Speed up typing</a
-            >
-          </li>
-          <li id="hamburger"><span></span><span></span><span></span></li>
         </div>
       </ul>
+      <div class="offscreen-nav-links liquidglass">
+        <ul>
+          <li data-anchor="top">
+            <a href="#top">Aaravv</a>
+          </li>
+          <li data-anchor="aboutme">
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li data-anchor="skills">
+            <a href="#skills">Skills</a>
+          </li>
+          <li data-anchor="myprojects">
+            <a href="#myprojects">My Projects</a>
+          </li>
+          <li data-anchor="competitions">
+            <a href="#competitions">Competitions</a>
+          </li>
+          <li data-anchor="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ham-menu pointer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+
+
+
     <div id="fullpage">
       <!-- Each section has a typing animation that starts on-scroll (except for the first one, because the user is already on that section). -->
       <div class="section" id="hero">
@@ -99,6 +119,32 @@
         <h1 id="projects-typed"></h1>
         <p id="projects-typed"></p>
         <object type="image/svg+xml" data="https://gh-card.dev/repos/acuccoder/dfetch.svg?link_target=_blank" style="border-radius: 10px;"></object>
+        
+        <!-- BEGIN Liquid Glass Card -->
+        <div class="liquidglass">
+          <div>
+            <p>Test</p>
+          </div>
+
+          <div class='liquidglass-accented'>
+            <h2>Rewards</h2>
+            <p>
+              <span class="text-accent">20%</span> Platform Fees +
+              <span class="text-accent">10%</span> Extra points
+            </p>
+          </div>
+
+        </div>
+        <!-- END Liquid Class Card -->
+
+        <!-- BEGIN Liquid Glass Navbar Test -->
+        <div class="liquidglass pillshape">
+          <div>
+            <p>Test</p>
+          </div>
+        </div>
+        <!-- END Liquid Class Card -->
+
       </div>
       <div class="section">
         <h1 id="achievements-typed"></h1>
@@ -113,6 +159,7 @@
     <script type="text/javascript" src="js/typed.umd.js"></script>
     <script type="text/javascript" src="js/typing.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/hamburger.js"></script>
     <script>
       placeHolder = document.getElementById("contact");
       // Fullpage.js code

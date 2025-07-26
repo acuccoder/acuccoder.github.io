@@ -50,14 +50,9 @@
   height: 15%;
 }
 
-.skills-container:hover .skills-overlay-node {
-  top: 70%;
-  height: 30%;
-}
-
-.skills-container:hover .skills-overlay-html {
-  top: 0%;
-  height: 100%;
+.skills-container:hover .skills-overlay-godot {
+  top: 90%;
+  height: 10%;
 }
 
 .skills-overlay-text {
