@@ -110,7 +110,7 @@ function callSectionTwo(number) {
       strings: [
         `I have participated in the following notable competitions:
         <ul>
-          <li>The 2023 Canada Jay Mathematics Competition</li>
+          <li>The 2023 Canada Jay Mathematics Competition - Top 10</li>
           <li>The 2024 Canada Jay Mathematics Competition</li>
           <li>The 2024 Canada Lynx Mathematics Competition</li>
           <li>The 10th Annual MegaMath Competition (2023) - Appreciation</li>
@@ -118,9 +118,8 @@ function callSectionTwo(number) {
           <li>The Spelling Bee of Canada - Regional Competition - Primary 2nd</li>
           <li>FIRST Tech Challenge Missisauga Qualifier - 1st Place Motivate Award</li>
           <li>Ontario VEX IQ Robotics Championship MS Provincials</li>
-        </ul>
-        `,
-        kdf,
+          <li>American Regions Mathematics League 2025</li>
+        </ul>`
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
