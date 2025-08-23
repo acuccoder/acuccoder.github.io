@@ -79,21 +79,22 @@ function callTyping(section) {
 function callSectionTwo(number) {
   if (number == 1) {
     var hero_typed_p = new Typed("p#hero-typed", {
-      strings: ["I love math, coding, and Vim. 🇨🇦"],
+      strings: ["I love math and coding. Welcome to my personal website!"],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
   } else if (number == 2) {
     var aboutme_typed_p = new Typed("p#aboutme-typed", {
       strings: [
-        "My name is Aaravv Chopra. I love coding and Linux-related stuff. I am 11 years old, so pretty young for someone who is into coding. I am learning C and some TypeScript, and I currently know HTML, CSS, JavaScript, basically every existing block coding language, and Python. <a href='https://wiki.archlinux.org/title/Arch_is_the_best'>Arch is the best</a>.",
+        "My name is Aaravv Chopra. I am 12 years old and I love coding and math. The programming languages I am learning are C and Java, \
+        and I currently know HTML, CSS, JavaScript, and Python. I also have a passion for competitive math. I am currently studying the Art of Problem Solving books.",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
   } else if (number == 3) {
     var projects_typed_p = new Typed("p#skills-typed", {
-      strings: ["Hover over the skills to see my current proficiency."],
+      strings: ["Hover over or tap each icon to see my current proficiency."],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
@@ -127,7 +128,7 @@ function callSectionTwo(number) {
   } else if (number == 6) {
     var achievements_typed_p = new Typed("p#contactme-typed", {
       strings: [
-        "You can contact me by filling out this form (coming as soon as I can setup @aaravv.me emails)  ",
+        "You can contact me by filling out this form (coming soon)  ",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
