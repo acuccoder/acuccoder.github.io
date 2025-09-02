@@ -105,7 +105,7 @@ nav ul div:first-child li {
 
 .section ul * {
   text-align: left;
-  font-size: var(--paragraph-font);
+  font-size: var(--paragraph-font)
 }
 
 .section ul {
