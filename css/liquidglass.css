@@ -1,0 +1,38 @@
+:root {
+  --text-1: hsl(0, 0%, 100%);
+
+  --surface-1: hsl(256, 43%, 7%);
+  --surface-3: hsl(243, 26%, 15%);
+
+  --border-1: hsl(259, 13%, 28%);
+  --border-2: hsl(252, 9%, 22%); /* bottom */
+}
+
+.liquidglass-accented {
+  color: var(--text-1);
+  background: hsl(from var(--surface-1) h s l / 0.5);
+  padding: 1ex 3ch;
+  border-radius: 12px;
+}
+
+.liquidglass {
+  --border-width: 1px;
+  border-radius: 1rem;
+
+  background: hsl(from var(--surface-3) h s l / 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.liquidglass::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  border: var(--border-width) solid transparent;
+  background: linear-gradient(var(--border-1), var(--border-2)) border-box;
+  mask: linear-gradient(black, black) border-box,
+    linear-gradient(black, black) padding-box;
+  mask-composite: subtract;
+}
+

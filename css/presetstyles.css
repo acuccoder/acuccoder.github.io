@@ -1,0 +1,33 @@
+/* contains small preset styles, sorta like bootstrap, because im lazy :) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
+:root {
+  --sans-serif: Montserrat, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  --heading: Onest, var(--sans-serif);
+  --monospace: "Space Mono", monospace;
+  --text-darkmode: var(--ctp-macchiato-text);
+  --bg-darkmode: var(--ctp-macchiato-base);
+  --heading-font: 4em;
+  --paragraph-font: 1.5em;
+}
+
+
+.pillshape {
+    border-radius: 51vh;
+}
+
+.centerContents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.invisible {
+  visibility: hidden;
+}

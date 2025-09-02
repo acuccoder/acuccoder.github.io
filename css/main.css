@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "responsive.css";
-@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
 @import "skills.css";
 @import "hamburger.css";
 @import "liquidglass.css";
@@ -27,13 +25,13 @@ p#hero-typed {
 }
 
 h1 {
-  font-size: 4em;
-  font-family: var(--heading);
+  font-size: var(--heading-font);
+  font-family: Onest;
   font-weight: 900;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: var(--paragraph-font);
 }
 
 a {
@@ -104,3 +102,21 @@ nav ul div:first-child li {
 .section:nth-child(even) {
   background-color: var(--bg-darkmode);
 }
+
+.section ul * {
+  text-align: left;
+  font-size: var(--paragraph-font);
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--ctp-macchiato-surface2);
+  margin: 20px 0;
+}
+

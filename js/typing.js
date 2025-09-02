@@ -1,5 +1,5 @@
 var alreadyTyped = [false, false, false, false, false, false];
-var _typeSpeed = 50;
+var _typeSpeed = 35;
 
 const TypingSpeedToggle = document.getElementById("typingSpeedToggle");
 
@@ -87,7 +87,7 @@ function callSectionTwo(number) {
     var aboutme_typed_p = new Typed("p#aboutme-typed", {
       strings: [
         "My name is Aaravv Chopra. I am 12 years old and I love coding and math. The programming languages I am learning are C and Java, \
-        and I currently know HTML, CSS, JavaScript, and Python. I also have a passion for competitive math. I am currently studying the Art of Problem Solving books.",
+        and I currently know HTML, CSS, JavaScript, and Python. I also have a passion for competitive math (please scroll down to the Competitions section to see the details). I am currently studying the Art of Problem Solving books.",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
@@ -109,18 +109,7 @@ function callSectionTwo(number) {
   } else if (number == 5) {
     var achivements_typed_p = new Typed("p#achievements-typed", {
       strings: [
-        `I have participated in the following notable competitions:
-        <ul>
-          <li>The 2023 Canada Jay Mathematics Competition - Top 10</li>
-          <li>The 2024 Canada Jay Mathematics Competition</li>
-          <li>The 2024 Canada Lynx Mathematics Competition</li>
-          <li>The 10th Annual MegaMath Competition (2023) - Appreciation</li>
-          <li>The Megamind 2024 Spelling Bee Competition - Winner (1st place)</li>
-          <li>The Spelling Bee of Canada - Regional Competition - Primary 2nd</li>
-          <li>FIRST Tech Challenge Missisauga Qualifier - 1st Place Motivate Award</li>
-          <li>Ontario VEX IQ Robotics Championship MS Provincials</li>
-          <li>American Regions Mathematics League 2025</li>
-        </ul>`
+        `I have participated in the following notable competitions:`
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
