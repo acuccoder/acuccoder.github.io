@@ -86,8 +86,9 @@ function callSectionTwo(number) {
   } else if (number == 2) {
     var aboutme_typed_p = new Typed("p#aboutme-typed", {
       strings: [
-        "My name is Aaravv Chopra. I am 12 years old and I love coding and math. The programming languages I am learning are C and Java, \
-        and I currently know HTML, CSS, JavaScript, and Python. I also have a passion for competitive math (please scroll down to the Competitions section to see the details). I am currently studying the Art of Problem Solving books.",
+        "- My name is Aaravv Chopra. I am 12 years old and I love coding and math. The programming languages I am currently learning are C, Java, and JSX. \
+        I am proficient in HTML, CSS, JavaScript, Linux, and Python. I also have a passion for competitive math (see the Competitions section). \
+        I am currently working through the Art of Problem Solving books.",
       ],
       typeSpeed: _typeSpeed,
       showCursor: false,
