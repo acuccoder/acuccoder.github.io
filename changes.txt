@@ -5,7 +5,8 @@
   - linux
 
 My name is Aaravv Chopra. I am 12 years old and I love coding and math. The programming languages I am currently learning are C, Java, and JSX. \
-        I am proficient in HTML, CSS, JavaScript, Linux, and Python. (add more)
+        I am proficient in HTML, CSS, JavaScript, Linux, and Python. \
+        I have experience with Virtual Machines and Docker containers.
   (end </p>)
   (new <p>)
   I also have a passion for competitive math (see the Competitions section). \
