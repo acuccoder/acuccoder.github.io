@@ -2,7 +2,7 @@
 .skills-container {
   position: relative;
   display: inline-block;
-  width: 25%;
+  width: 20%;
   padding: 10px;
 }
 
@@ -51,6 +51,16 @@
 }
 
 .skills-container:hover .skills-overlay-godot {
+  top: 85%;
+  height: 15%;
+}
+
+.skills-container:hover .skills-overlay-linux {
+  top: 30%;
+  height: 70%;
+}
+
+.skills-container:hover .skills-overlay-react {
   top: 90%;
   height: 10%;
 }

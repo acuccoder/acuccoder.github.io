@@ -94,7 +94,7 @@ function callSectionTwo(number) {
     });
   } else if (number == 3) {
     var projects_typed_p = new Typed("p#skills-typed", {
-      strings: ["Hover over or tap each icon to see my current proficiency."],
+      strings: ["Hover over or tap each icon to see my current proficiency. Some logos might have a license that requires attribution, so each logo's hover text gives proper credit."],
       typeSpeed: _typeSpeed,
       showCursor: false,
     });
